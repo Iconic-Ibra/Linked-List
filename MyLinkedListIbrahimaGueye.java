@@ -42,7 +42,7 @@ public class MyLinkedListIbrahimaGueye <T> {
 	public T getLast() throws RuntimeException{
 		// return the last element
 		// if you don't have any element, throw RuntimeException with a message
-		// Write code here
+		
 		if (tail == null) {
 			throw new RuntimeException("This list is empty");
 		}
@@ -52,7 +52,6 @@ public class MyLinkedListIbrahimaGueye <T> {
 	}
 	public void addLast(T newElement){
 		// add a new Node to be the last element.
-		// Write code here
 	Node newnode = new Node ( newElement);
 	
 	if(head ==null) head = newnode;
@@ -67,7 +66,6 @@ public class MyLinkedListIbrahimaGueye <T> {
 		// Case 2: if you have only one elements
 		// Case 3: in general case
 		// Caution: you must care about the [tail] after removal
-		// Write code here
 		if ( tail ==null ) throw new RuntimeException("Nothing in the list");
 		else if (head == tail) {
 			
@@ -94,7 +92,6 @@ public class MyLinkedListIbrahimaGueye <T> {
 		// if the list doesn't have targetElement, return -1
 		// Caution: index starts with 0  (the first element's index is 0)
 		// Caution: to return index, you must check the index of node while you searching
-		// Write code here
 		Node current = head;
 		int index; index=0;
 		
